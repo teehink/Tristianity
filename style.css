@@ -1,0 +1,100 @@
+html, main, body, h1, h2, h3, h4, img, div {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: block;
+  background-color: #2E3047;
+}
+
+body {
+  background-color: #707793;
+  color: #221811;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+
+h1  {
+  font-family: Jura-Light, sans-serif;
+  color: #FFFFFF;
+  margin: none;
+  <!-- background-image: url(images/bobslogo.jpg); -->
+  background-repeat: no-repeat;
+  width: auto;
+  padding-top: 10px;
+}
+
+h2  {
+  color: #EAEAEA;
+  text-align: center;
+}
+
+h3     {
+    color:#EAEAEA;
+    text-align: left;
+    font-family: Palatino, Georgia, serif;
+}
+h4     {
+    color: #EAEAEA;
+    text-align: center;
+    font-family: Arial, Verdana, sans-serif;
+}
+nav {
+    background-color: #FF0000;
+    color: #2E3047;
+}
+
+a     { color: #2E3047; }
+
+nav a {
+
+}
+nav a:link { color: #FFFFFF; }
+nav a:hover { color: #2E3047; background-color: #707793; }
+nav a:active { color: #FFFFFF; background-color: #FF0000; }
+/* nav a:visited { color: #B7B7B7; } */
+nav ul {
+    background-color: #2E3047;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+  width: 90%;
+  max-width: 800px;
+}
+
+
+#mobile		{ display: none;}
+#desktop	{ display: inline;}
+
+@media only screen and (max-width:1024px) {
+
+
+#mobile		{ display: inline; }
+#desktop	{ display: none; }
+}
+
+@media only screen and (max-width: 600px)	{
+
+#wrapper 	{
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    height: auto;
+}
+
+#mobile		{ display: inline; }
+#desktop	{ display: none; }
+}

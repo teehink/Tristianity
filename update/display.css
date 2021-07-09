@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Saira&display=swap');
+
+
+@font-face
+{
+  font-family: "Erode-Variable";
+  src: url("fonts/Erode-Variable.woff2") format("woff2"),
+	   url("fonts/Erode-Variable.eot") format("eot");
+}
+
+main
+{
+  margin: -5px;
+  padding: 0;
+}
+
+#contain
+{
+  margin: 0 auto;
+  max-width: 800px;
+  background-image: url(images/palmbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: grid;
+  height: calc(100vh - 10px);
+}
+
+img
+{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+nav
+{
+  background-color: hsl(180, 25%, 75%);
+}
+
+nav ul
+{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 2rem;
+  align-items: center;
+  padding-left: 0;
+}
+
+nav li
+{
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+}
+
+#home
+{
+  grid-column: 2;
+}
+
+#past
+{
+  grid-columm: 3;
+}
+
+#present
+{
+  grid-column: 4;
+}
+
+#contact
+{
+  grid-column: 5;
+}
+
+/* End Nav Section ------------------------- */
+
+#sample
+{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  column-gap: 10px;
+}
+
+h1, #two, #three, #four, #five, #six, #seven
+{
+  text-align: center;
+  color: black;
+  border: solid 2px black;
+  border-radius: 3px;
+  margin: 0.5rem 0;
+  padding: 1rem;
+}
+
+h1
+{
+  font-size: 3rem;
+  background-color: hsl(270, 20%, 80%);
+  grid-column-start: 2;
+  grid-column-end: span 10;
+  grid-row-start: 1;
+}
+
+#four
+{
+  background-color: orange;
+  grid-column-start: 2;
+  grid-column-end: span 5;
+}
+
+#three, #seven
+{
+  background-color: pink;
+  grid-column-start: 7;
+  grid-column-end: span 5;
+}
+
+#two, #six
+{
+  grid-column: 2 / span 5;
+  border: none;
+  color: hsla(0, 0%, 0%, 0%);
+}
+
+#four
+{
+  grid-row-start: 3;
+  grid-row-end: span 2;
+}
+
+#five
+{
+  grid-column: 7 / span 5;
+  grid-row: 3;
+  border: none;
+  color: hsla(0, 0%, 0%, 0%);
+}
+
+#seven
+{
+  grid-row: 4 / span 2;
+}
